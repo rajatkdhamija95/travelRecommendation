@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+    <script src="./travel_recommendation.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <img class="imgLogo" src="./globe.png"/>
+            <span class="logo">TravelBoom</span>
+        </div>
+        <div class="nav-links">
+            <a href="./travel_recommendation.html">Home</a>
+            <a href="./about_us.html">About Us</a>
+            <a href="./contact_us.html">Contact Us</a>
+        </div>
+        <div class="search-bar" style="visibility: hidden;">
+            <input type="text" placeholder="Enter a keyword or destination..." aria-label="Search">
+            <div class="buttons">
+                <button type="button" class="search-button">Search</button>
+                <button type="button" class="clear-button">Clear</button>
+            </div>
+        </div>
+    </nav>
+    <div class="full-page-div">
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">
+                <img src="./facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="./twitter.webp" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="./insta.webp" alt="Instagram">
+            </a>
+
+            <a href="https://youtube.com" target="_blank">
+                <img src="./youtube.webp" alt="Youtube">
+            </a>
+           
+        </div>
+        <div class="main-page">
+            <span class="introduction">Contact Us</span><br>
+            <span class ="sub-heading">Get in Touch</span>
+        </div>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+            
+            <button type="submit" onclick="submitForm()" class="submit-btn">Submit</button>
+        </form>
+
+       
+        
+    </div>
+</body>
+</html>

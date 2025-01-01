@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(passport.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+.navbar div {
+    display: flex;
+    align-items: center;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background 0.3s;
+}
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+.navbar .imgLogo {
+    width: 50px;
+}
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+}
+.navbar .nav-links {
+    display: flex;
+}
+.navbar .nav-links a {
+    margin-left: 10px;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 30px; /* Makes the search bar rounded */
+    overflow: hidden; /* Ensures content doesn't overflow the rounded edges */
+    background-color: #fff;
+    padding: 5px;
+}
+
+.search-bar input {
+    width: 250px;
+    flex-grow: 1; /* Allows the input to take up available space */
+    border: none;
+    padding: 10px;
+    border-radius: 30px 0 0 30px; /* Rounded edges for the input */
+    font-size: 16px;
+    outline: none; /* Removes outline on focus */
+}
+
+.search-bar .buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar button {
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    background-color: #1B888B;
+    color: white;
+    border-radius: 0; /* Remove extra rounding */
+}
+
+.search-bar .search-button {
+    border-radius: 30px 30px 30px 30px; /* Rounded right edge for the search button */
+}
+
+.search-bar .clear-button {
+    background-color: #1B888B; /* Red for clear button */
+    border-radius: 0; /* Keep corners square to match layout */
+    border-radius: 30px 30px 30px 30px; 
+}
+
+.search-bar button:hover {
+    opacity: 0.9; /* Slight hover effect for buttons */
+}
+.full-page-div {
+    width: 100%;
+    height: 100vh; /* Full height minus navbar */
+    background: linear-gradient(to bottom right, #542437e1 0%, #cdb38041 100%) 100% no-repeat;
+    display: flex;
+    flex-direction: row;
+}
+.main-page {
+    margin-top: 100px;
+}
+.introduction {
+    color: white;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.our-team-heading {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+.sub-heading {
+    color: white;
+    display: flex;
+    font-size: 16px;
+    margin-top: 50px;
+    width: 500px;
+}
+
+.about-us-sub-heading {
+    color: white;
+    display: flex;
+    font-size: 16px;
+    margin-top: 50px;
+    width: calc(100vw - 450px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    line-height: 1.5;
+    padding: 20px;
+}
+.book-btn {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5px; 
+    background-color: #5c2a378a;
+    color: white;
+}
+.social-media {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 20px;
+    padding-top: 300px;
+    width: 100px;
+}
+.social-media a {
+    text-decoration: none;
+}
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+.team-member {
+    text-align: center;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 80px;
+    margin-left: 20px;
+}
+
+.team-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.team-name {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+.team-occupation {
+    font-size: 16px;
+    color: white;
+    font-weight: 200;
+    padding-top: 10px;
+    margin: 0px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    height: 400px;
+    align-self: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.search-item-result {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    color: white;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .navbar .nav-links a {
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+   
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <img class="imgLogo" src="./globe.png"/>
+            <span class="logo">TravelBoom</span>
+        </div>
+        <div class="nav-links">
+            <a href="./travel_recommendation.html">Home</a>
+            <a href="./about_us.html">About Us</a>
+            <a href="./contact_us.html">Contact Us</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter a keyword or destination..." aria-label="Search">
+            <div class="buttons">
+                <button type="button" class="search-button" id="searchButton">Search</button>
+                <button type="button" class="clear-button" id="clearButton">Clear</button>
+            </div>
+        </div>
+    </nav>
+    <div class="full-page-div">
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">
+                <img src="./facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="./twitter.webp" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="./insta.webp" alt="Instagram">
+            </a>
+
+            <a href="https://youtube.com" target="_blank">
+                <img src="./youtube.webp" alt="Youtube">
+            </a>
+           
+        </div>
+        <div class="main-page">
+            <span class="introduction">EXPLORE<br>DREAM<br>DESTINATION</span><br>
+            <span class ="sub-heading">Explore the world like never before with our travel destination search. Whether you're looking for vibrant cities, serene beaches, or cultural escapes, we’ve got you covered. Find the perfect getaway based on your interests, budget, and travel style. Start your journey today and let the adventure unfold!</span>
+            <button class="book-btn">
+                BOOK NOW
+            </button>
+        </div>
+        <div id="result"></div>
+
+       
+        
+    </div>
+    <script src="./travel_recommendation.js"></script>
+</body>
+</html>
